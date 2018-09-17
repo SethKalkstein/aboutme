@@ -1,0 +1,47 @@
+section {
+	width: 95%;
+	margin: 0px auto;
+	padding: 10px;
+}
+
+.section-wrapper {
+	/*display: grid;*/
+/*	grid-template-columns: 1fr 1fr;*/
+	column-count: 3;
+	width: 90%;
+	margin: 0px auto;
+}
+
+
+.section-graphic {
+	width: 85px;
+	height: 85px;
+	display: block;
+	margin: 10px 10px;
+	float: left;
+}
+
+@media all and (min-width: 767px) and (max-width: 992px){
+	.section-graphic {
+		width: 70px;
+		height: 70px;
+	}	
+}
+@media all and (min-width: 481px) and (max-width: 768px){
+	.section-wrapper {
+		column-count: 2;
+	}
+	.section-graphic {
+		width: 60px;
+		height: 60px;
+	}
+}
+@media all and (max-width: 480px){
+	.section-wrapper {
+		column-count: 1;
+	}
+	.section-graphic {
+		width: 50px;
+		height: 50px;
+	}
+}
