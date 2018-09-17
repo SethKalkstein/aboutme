@@ -1,38 +1,44 @@
 
+.Page-headings {
+	width: 95%;
+}
+
+.Page-headings h1 {
+	margin: 5px auto;
+	font-size: 3em;
+	background-color: lightgrey;
+	border-radius: 10%
+}
+
 .image-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	width: 95%;
-	border: 2px solid green;
+	/*border: 2px solid green;*/
 	margin: 20px auto;
+	grid-column-gap: 1%;
+	grid-row-gap: 10px;
 }
 
 .image-wrapper div {
-	border: 1px solid blue;
-	/*width: 95%;*/
-	/*position: relative;*/
+	/*border: 1px solid blue;*/
 	display: grid;
-	grid-template-rows: 1fr 2.5fr;
-	overflow: hidden;
+	grid-template-rows: 1fr 4.5fr;
 }
 .image-wrapper div img {
-	border: 1px solid red;
-	/*width: 95%;*/
-/*	align-self: baseline;*/
-	/*display: block;*/
+	/*border: 1px solid red;*/
+	width: 100%;
+	border-radius: 5%;
 }
-.image-wrapper div h4 {
-	/*display: none;	*/
-/*	align-content: flex-start;*/
-	border: 1px solid pink;
-	/*position: absolute;*/
-	/*top: 0;*/
+
+@media all and (min-width: 993px){
+	.image-wrapper div h4 {
+		display: none;
+	}
+	.image-wrapper div {
+		display: block;
+	}	
 }
-/*.Page-headings {
-	grid-column-start: 1;
-	grid-column-end: 5;
-	color: red;
-	border: 1px solid blue; */
 
 @media all and (min-width: 767px) and (max-width: 992px){
 	.image-wrapper {
