@@ -2,3 +2,130 @@
 	border: 0;
 	margin: 0;
 }
+
+.header-pic img {
+	width: 10%;
+	display: block;
+	border-radius: 10%;
+	float: left;
+}
+
+header {
+	border-bottom: 2px solid;
+	width: 100%;
+	margin: 0 auto;
+	background-color: pink;
+	/*display: flex;*/
+	padding: 1% 1% 0 1%;
+	overflow: hidden;
+}
+.nav-bar {
+	width: 89%;
+	display: flex;
+	/*float: right;*/
+	/*border: 2px solid green;*/
+	align-self: flex-end;
+	align-items: flex-end;
+	align-content: flex-end
+	padding: 0px auto;
+}
+
+.nav-bar a {
+	text-align: center;
+	margin: 0px auto;
+	text-decoration: none;
+	font-size: 4em;
+}
+
+.nav-bar a:hover {
+	color: white;
+}
+
+.Page-headings {
+	width: 55%;
+	border: 2px solid purple;
+	margin: 40px auto;
+	text-align: center;
+	box-shadow: 10px 10px 20px pink;
+	border-radius: 10px;
+	background-color: lightgrey;
+	color: purple;
+}
+
+.Page-headings h1 {
+	font-size: 3.75em;
+}
+
+.Page-headings h2 {
+	font-size: 2em;
+}
+
+footer {
+	width: 95%;
+	border-top: : 2px solid black;
+	border-top: : 2px solid black;
+    border-top: : 2px solid black;
+	margin: 20px auto;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+	background-color: pink;
+	font-size: 1.5em;	
+}
+
+@media all and (min-width: 993px){
+/*	.Page-headings {
+		box-shadow: 10px 10px 20px pink;
+		border-radius: 10px;	
+	}	*/
+}
+
+@media all and (min-width: 767px) and (max-width: 992px){
+	.Page-headings {
+		box-shadow: 7.5px 7.5px 15px pink;
+		border-radius: 10px;	
+		margin: 30px auto;
+	}
+	.nav-bar a {
+		font-size: 3em;
+	}
+}
+@media all and (min-width: 481px) and (max-width: 768px){
+	.nav-bar {
+		width: 75%;
+	}
+	.nav-bar a {
+		font-size: 2em;
+	}
+	.header-pic img {
+		width: 15%
+	}
+	.Page-headings {
+		box-shadow: 5px 5px 10px pink;
+		border-radius: 5px;
+		margin: 20px auto;	
+	}
+}
+@media all and (max-width: 480px){
+	.nav-bar {
+		width: 75%;
+	}
+	.nav-bar a {
+		font-size: 1.4em;
+	}
+	.header-pic img {
+		width: 20%;
+	}
+	.Page-headings {
+		box-shadow: 5px 5px 5px pink;
+		border-radius: 5px;
+		margin: 10px auto 0 auto;	
+	}
+	.Page-headings h1 {
+		font-size: 2.75em;
+	}
+
+	.Page-headings h2 {
+		font-size: 1.5em;
+	}
+
+}

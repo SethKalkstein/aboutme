@@ -1,13 +1,5 @@
-
-.Page-headings {
-	width: 95%;
-}
-
-.Page-headings h1 {
-	margin: 5px auto;
-	font-size: 3em;
-	background-color: lightgrey;
-	border-radius: 10%
+.Page-headings h3 {
+	display: none;
 }
 
 .image-wrapper {
@@ -25,6 +17,9 @@
 	display: grid;
 	grid-template-rows: 1fr 4.5fr;
 }
+.image-wrapper div h4 {
+		padding: 5% auto 0px auto;
+}
 .image-wrapper div img {
 	/*border: 1px solid red;*/
 	width: 100%;
@@ -32,6 +27,9 @@
 }
 
 @media all and (min-width: 993px){
+	.Page-headings h3 {
+		display: initial;
+	}
 	.image-wrapper div h4 {
 		display: none;
 	}
@@ -53,5 +51,12 @@
 @media all and (max-width: 480px){
 	.image-wrapper {
 		display: block;
+	}
+	.image-wrapper div h4 {
+		margin: 10px auto 0px auto;
+	}
+	.image-wrapper div img {
+		margin: -30px auto 10px auto;
+		border: 1px solid black;
 	}
 }
