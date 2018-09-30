@@ -6,7 +6,7 @@
 .header-pic img {
 	width: 10%;
 	display: block;
-	border-radius: 10%;
+	border-radius: 0 25% 25% 0;
 	float: left;
 }
 
@@ -16,7 +16,7 @@ header {
 	margin: 0 auto;
 	background-color: pink;
 	/*display: flex;*/
-	padding: 1% 1% 0 1%;
+	padding: 0 1% 0 0;
 	overflow: hidden;
 }
 .nav-bar {
@@ -26,8 +26,9 @@ header {
 	/*border: 2px solid green;*/
 	align-self: flex-end;
 	align-items: flex-end;
-	align-content: flex-end
+	align-content: flex-end;
 	padding: 0px auto;
+	/*align-content: center;*/
 }
 
 .nav-bar a {
